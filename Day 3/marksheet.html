@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Marksheet</title>
+	<style>
+		table, td{
+			border: 2px solid black; 
+			border-collapse: collapse;
+			background-color: rgb(238, 222, 130);
+			width: 450px;
+			height: 40px;
+			font-size: large;
+		}
+		td{
+			padding: 10px;
+
+		}
+	</style>
+</head>
+<body>
+	<center>
+		<h1>Student Marksheet</h1>
+		<form name="Form1" method="post" action="marksheet.php">
+			<table>
+				<tr>
+					<td>Name :</td>
+					<td><input style="height: 25px;" type="input" name="name"></td>
+				</tr>
+				<tr>
+					<td>Enrollment no. :</td>
+					<td><input style="height: 25px;" type="input" name="no"></td>
+				</tr>
+				<tr>
+					<td>Gender :</td>
+					<td>
+						<input style="height: 25px; width: 15px;" type="radio" name="gender" value="female">Female
+						<input style="height: 25px; width: 15px;" type="radio" name="gender" value="male">Male
+					</td>
+				</tr>
+				<tr>
+					<td>Branch :</td>
+					<td><select style="height: 25px; width: 140px;" name="Branch">
+						<option>----Select----</option>
+						<option>IT</option>
+						<option>computer</option>
+						<option>EC</option>
+						<option>Civil</option>
+						<option>Mehcanical</option>
+					</select></td>
+				</tr>
+				<tr>
+					<td>Semester :</td>
+					<td><input style="height: 25px;" type="input" name="sem"></td>
+				</tr>
+				<tr>
+					<td>Advance Java :</td>
+					<td><input style="height: 25px;" type="input" name="java"></td>
+				</tr>
+				<tr>
+					<td>PHP :</td>
+					<td><input style="height: 25px;" type="input" name="PhP"></td>
+				</tr>
+				<tr>
+					<td>Python :</td>
+					<td><input style="height: 25px;" type="input" name="Python"></td>
+				</tr>
+				<tr>
+					<td>Android :</td>
+					<td><input style="height: 25px;" type="input" name="android"></td>
+				</tr>
+				<tr>
+					<td>C++ :</td>
+					<td><input style="height: 25px;" type="input" name="C"></td>
+				</tr>
+				<tr>
+					<td align="center"><input style="height: 35px; width: 70px;" type="submit" name="Submit" value="Ok"></td>
+					<td align="center"><input style="height: 35px; width: 80px;" type="reset" name="Reset" value="Reset"></td>
+				</tr>
+			</table>
+	</center>
+</body>
+</html>

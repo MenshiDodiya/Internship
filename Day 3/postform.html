@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title> Registration Form </title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+
+	</style>
+	<link rel="stylesheet" type="text/css" href="css/style1.css"> 
+
+</head>
+
+<body bgcolor="#FFE4C4">
+	<table bgcolor="#d1d4a9" align="center">
+		<form action="postform.php" method="POST" class="container">
+			<tr>
+				<th colspan="3" bgcolor="#FF0000">
+					<h1>Registration Form</h1>
+				</th>
+			</tr>
+			<tr>
+				<td style="width: 200px"><label for="fname">First name</label></td>
+				<td style="width: 30px"><b>:</b></td>
+				<td style="width: 400px"><input type="text" name="fname" id="fname" required><br></td>
+			</tr>
+
+			<tr>
+				<td style="width: 200px"><label for="lname">Last name</label></td>
+				<td style="width: 30px"><b>:</b></td>
+				<td style="width: 400px"><input type="text" name="lname" id="lname" required><br></td>
+			</tr>
+
+			<tr>
+				<td style="width: 200px"><label for="emailid">Email id</label></td>
+				<td style="width: 30px"><b>:</b></td>
+				<td style="width: 400px"><input type="email" name="emailid" id="emailid"></td>
+			</tr>
+
+			<tr>
+				<td style="width: 200px"><label for="mobile no.">Mobile no.</label></td>
+				<td style="width: 30px"><b>:</b></td>
+				<td style="width: 400px"><input type="number" name="mobile" id="mobile" maxlength="10" required></td>
+			</tr>
+
+			<tr>
+				<td style="width: 200px"><label for="add">Address</label></td>
+				<td style="width: 30px"><b>:</b></td>
+				<td style="width: 400px"><textarea name="address" rows="5" cols="30" required></textarea></td>
+			</tr>
+
+			<tr>
+				<td style="width: 200px"><label for="city">Choose your City</label></td>
+				<td style="width: 30px"><b>:</b></td>
+				<td style="width: 400px"><select id="city" name="city">
+						<option value="ahmedabad">Ahemdabad</option>
+						<option value="surat">Surat</option>
+						<option value="rajkot">Rajkot</option>
+						<option value="vadodara">Vadodara</option>
+						<option value="bhavnagar">Bhavnagar</option>
+						<option value="jamnagar">Jamnagar</option>
+						<option value="gandhinagar">Gandhinagar</option>
+						<option value="junagadh">Junagadh</option>
+						<option value="nadiad">Nadiad</option>
+						<option value="anand">Anand</option>
+					</select></td>
+			</tr>
+			<tr>
+				<td style="width: 200px"><label for="state">State</label></td>
+				<td style="width: 30px"><b>:</b></td>
+				<td style="width: 400px"><input type="text" name="state" id="state" required><br></td>
+			</tr>
+
+			<tr>
+				<td style="width: 200px"><label for="dob">Date of Birth</label></td>
+				<td style="width: 30px"><b>:</b></td>
+				<td style="width: 400px"><input type="Date" name="dob" id="dob" value=" "></td>
+			</tr>
+
+			<tr>
+				<td style="width: 200px"><label for="gender">Gender</label></td>
+				<td style="width: 30px"><b>:</b></td>
+				<td style="width: 400px">
+					<input type="radio" id="male" name="gender" value="male">Male
+					<input type="radio" id="female" name="gender" value="female">Female
+					<input type="radio" id="other" name="gender" value="other">Other
+				</td>
+			</tr>
+
+			<tr>
+				<td style="width: 200px"><label for="hobbies">Hobbies</label></td>
+				<td style="width: 30px"><b>:</b></td>
+				<td style="width: 400px">
+					<input type="checkbox" id="hobby1" name="hobby[]" value="drawing">Drawing<br>
+					<input type="checkbox" id="hobby2" name="hobby[]" value="reading">Reading<br>
+					<input type="checkbox" id="hobby3" name="hobby[]" value="dancing">Dancing<br>
+					<input type="checkbox" id="hobby4" name="hobby[]" value="singing">Singing<br>
+					<input type="checkbox" id="hobby5" name="hobby[]" value="writing">Writing
+				</td>
+			</tr>
+
+			<tr>
+				<td style="width: 200px"><label for="myfile">Upload your photo</label></td>
+				<td style="width: 30px"><b>:</b></td>
+				<td style="width: 400px"><input type="file" id="myfile" width="250px" height="50px" name="myfile"></td>
+			</tr>
+
+			<tr>
+				<td colspan="3" align="center">
+					<button type="submit" value="Submit" class="btn">Submit
+					</button>&nbsp;&nbsp;
+					<button type="reset" value="Reset data" class="btn">Reset Data
+					</button>
+				</td>
+			</tr>
+		</form>
+
+	</table>
+</body>
+
+</html>
